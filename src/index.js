@@ -29,7 +29,6 @@ function App() {
   };
 
   function HandleonChange(e) {
-    e.target.value;
     marker.setLngLat(stores[e.target.value]);
   }
 
