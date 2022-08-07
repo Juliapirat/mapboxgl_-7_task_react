@@ -8,7 +8,6 @@ function App() {
     "pk.eyJ1IjoiYm9vYW5kcmV3IiwiYSI6ImNrd3M2ZGF1YzBhcDEyb21obzUwcDlvNXMifQ.q0NAPJB4RMgRRI8Fi9PWZg";
 
   const [marker, setMarker] = useState([]);
-  const [shopname, setShopname] = useState("");
 
   useLayoutEffect(() => {
     const map = new mapboxgl.Map({
@@ -30,7 +29,7 @@ function App() {
   };
 
   function HandleonChange(e) {
-    setShopname(e.target.value);
+    e.target.value;
     marker.setLngLat(stores[e.target.value]);
   }
 
