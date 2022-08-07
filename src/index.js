@@ -38,7 +38,7 @@ function App() {
     <>
       <div className="map-overlay">
         <h3>Выберите магазин: </h3>
-        <select value={shopname} onChange={HandleonChange}>
+        <select onChange={HandleonChange}>
           <option value="km20">KM20</option>
           <option value="belief">BELIEF</option>
           <option value="brandshop">BRANDSHOP</option>
